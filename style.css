@@ -1,0 +1,87 @@
+body{
+    background-color: azure;
+    max-width: 1000px;
+    margin: auto;
+}
+
+canvas{
+    padding-top: 40px;
+}
+
+.hidden{
+    display: none;
+}
+
+div{
+    position: absolute;
+    top: 120px;
+    left: 35%;
+    background-color: darkcyan;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 270px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+p{
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    left: -15px;
+}
+
+
+input {
+    margin: 5px;
+    border-radius: 3px;
+}
+
+
+select {
+    width: 200px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+#add{
+    position: relative;
+    margin: 10px;
+    height: 25px;
+    width: 60px;
+    left: 30%;
+}
+
+
+fieldset{
+    border: none;
+    padding: none;
+    padding: 0 30px ;
+}
+form{
+    padding: none;
+}
+label{
+    padding: 0 10px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+/* #btn1{
+    position: relative;
+    left: 35%;
+    top: 15px;
+} 
+#btn2{
+    position: relative;
+    left: 45%;
+    bottom: 15px; */
+/* }  */
