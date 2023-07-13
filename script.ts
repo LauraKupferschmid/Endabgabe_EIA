@@ -19,6 +19,8 @@ namespace iceshop{
         // Funktionsaufruf
         drawBackground();
         drawTable();
+        drawCounter();
+        hndlformular();
     }
 
 }

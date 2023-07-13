@@ -85,5 +85,18 @@ var iceshop;
         iceshop.crc2.fillRect(800, 115, 40, 40);
     }
     iceshop.drawTable = drawTable;
+    function drawCounter() {
+        console.log("Counter");
+        // Schokolade
+        iceshop.crc2.fillStyle = "sandybrown";
+        iceshop.crc2.fillRect(260, 80, 30, 40);
+        // Vanille
+        iceshop.crc2.fillStyle = "lemonchiffon";
+        iceshop.crc2.fillRect(260, 130, 30, 40);
+        // Erbeere
+        iceshop.crc2.fillStyle = "lightcoral";
+        iceshop.crc2.fillRect(260, 180, 30, 40);
+    }
+    iceshop.drawCounter = drawCounter;
 })(iceshop || (iceshop = {}));
 //# sourceMappingURL=background.js.map

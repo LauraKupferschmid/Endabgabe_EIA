@@ -1,27 +1,47 @@
 body{
-    background-color: azure;
-    max-width: 1000px;
-    margin: auto;
+    background-color: lightgray;
 }
 
 canvas{
-    padding-top: 40px;
+    margin-top: 40px;
+    margin-left: 50px;
+    border: 4px;
+    border-color: black;
+    border-style: solid;
 }
 
 .hidden{
     display: none;
 }
 
-div{
+#div2{
     position: absolute;
     top: 120px;
-    left: 35%;
-    background-color: darkcyan;
+    left: 350px;
+    background-color:tan;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     width: 270px;
     height: 350px;
     border-radius: 10px;
+    border: 2px;
+    border-color: saddlebrown;
+    border-style: solid;
+}
+
+#div1{
+    position: absolute;
+    top: 48px;
+    left: 980px;
+    padding: 15px;
+    background-color:tan;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    width: 300px;
+    height: 520px;
+    border: 4px;
+    border-color: saddlebrown;
+    border-style: solid;
 }
 
 h3{
@@ -75,6 +95,27 @@ label{
     margin-left: 15px;
 }
 
+#newp{
+    margin: 15px;
+    text-align: left;
+    background-color: orange;
+    padding: 15px;
+    border: 1px;
+    border-color:saddlebrown;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 10px 10px;
+}
+
+
+#edit{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 2px;
+    border: 1px;
+    box-shadow: 2px 2px;
+}
 /* #btn1{
     position: relative;
     left: 35%;

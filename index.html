@@ -6,30 +6,40 @@
     <title>Iceshop</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./background.js" defer></script>
+    <script src="./vector.js" defer></script>
+    <script src="./human.js" defer></script>
+    <script src="./icecream.js" defer></script>
+    <script src="./customer.js" defer></script>
+    <script src="./waiter.js" defer></script>
+    <script src="./toppings.js" defer></script>
+    <script src="./container.js" defer></script>
     <script src="./client.js" defer></script>
     <script src="./script.js" defer></script>
 </head>
 <body>
    <canvas height="550px" width="900px"></canvas>
 
+   <div id="div1">
+   </div>
+
    <div id="div2">
     <h3>Order</h3>
     <form action="" id="myform">
         <fieldset>
         <input type="text" name="Anzahl_Kugeln" id="N_Kugel" placeholder="Anzahl Kugel"> <br>
-        <select name="Sorte" id="Eissorte">Name
+        <select name="Sort" id="Eissorte">Name
             <option value="Schoko">Schoko</option>
             <option value="Vanille">Vanille</option>
             <option value="Erdbeere">Erdbeere</option>
             <option value="Zitrone">Zitrone</option>
         </select> <br>
-        <select name="Souce" id="souve">Name
+        <select name="Souce" id="souce">Name
             <option value="Schoko">Schoko</option>
             <option value="Vanille">Vanille</option>
             <option value="Erdbeere">Erdbeere</option>
             <option value="Eierlikör">Eierlikör</option>
         </select> <br>
-        <select name="Streusel" id="souve">Name
+        <select name="Streusel" id="streusel">Name
             <option value="Schoko">Schoko Streusel</option>
             <option value="Bunte">Bunte Streusel</option>
             <option value="Keine">Keine</option>
@@ -37,11 +47,11 @@
         
         <p>Sahne</p>
         <label id="label1">
-            <input type="radio" name="radio1" value="Ja_sahne" id="btn1">
+            <input type="radio" name="radio1" value="Sahne" id="btn1">
             Ja
         </label>
         <label id="label2">
-            <input type="radio" name="radio1" value="Nein_Sahne" id="btn2">
+            <input type="radio" name="radio1" value="Keine Sahne" id="btn2">
             Nein
         </label><br/>
     </fieldset>

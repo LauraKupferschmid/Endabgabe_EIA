@@ -111,6 +111,22 @@ namespace iceshop{
             crc2.fillRect(800, 115,40,40);
     }
 
+    export function drawCounter(): void {
+        console.log("Counter");
+
+        // Schokolade
+        crc2.fillStyle ="sandybrown";
+        crc2.fillRect(260,80,30,40);
+
+        // Vanille
+        crc2.fillStyle ="lemonchiffon";
+        crc2.fillRect(260,130,30,40);
+
+        // Erbeere
+        crc2.fillStyle ="lightcoral";
+        crc2.fillRect(260,180,30,40);
+
+    }
 
 
     

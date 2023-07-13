@@ -14,6 +14,8 @@ var iceshop;
         // Funktionsaufruf
         iceshop.drawBackground();
         iceshop.drawTable();
+        iceshop.drawCounter();
+        iceshop.hndlformular();
     }
     iceshop.hndload = hndload;
 })(iceshop || (iceshop = {}));
