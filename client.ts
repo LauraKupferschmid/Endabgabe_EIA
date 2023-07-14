@@ -61,7 +61,7 @@ namespace iceshop{
             let values: FormDataEntryValue[] = formData.getAll(key);
             json[key] = values.length > 1 ? values : values[0];
         }
-    
+
     export let submit: HTMLButtonElement = <HTMLButtonElement>document.querySelector("#add"); 
 
     export async function sendTask(_event:Event): Promise<void> { //link zum versenden funktioniert nicht

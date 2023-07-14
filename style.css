@@ -116,6 +116,27 @@ label{
     border: 1px;
     box-shadow: 2px 2px;
 }
+
+#startbtn{
+    position: relative;
+    top: 300px;
+    margin-left: 45%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#start_p{
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+
+}
 /* #btn1{
     position: relative;
     left: 35%;
