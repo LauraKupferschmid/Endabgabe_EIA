@@ -9,8 +9,7 @@ var iceshop;
         if (!canvas)
             return;
         iceshop.crc2 = canvas.getContext("2d");
-        // Server commun
-        // hndlformular();?
+        // Server communi
         //startpage
         // start_page();
         // document.getElementById("startbtn")?.addEventListener("click",start)

@@ -13,8 +13,7 @@ namespace iceshop {
         if (!canvas)
             return;
         crc2 = <CanvasRenderingContext2D>canvas!.getContext("2d")
-        // Server commun
-        // hndlformular();?
+        // Server communi
 
         //startpage
         // start_page();
@@ -61,7 +60,7 @@ namespace iceshop {
     let person: human[] = [];
 
     console.log(person[5])
-    
+
     function createperson(): void {
         for (let iperson: number = 0; iperson < 1; iperson++) {
             let personi: human = new waiter(new Vector(400, 500), new Vector(400, 500), "happy");
