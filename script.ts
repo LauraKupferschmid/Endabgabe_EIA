@@ -1,4 +1,4 @@
-namespace iceshop{
+namespace iceshop {
 
     window.addEventListener("load", hndload)
 
@@ -6,7 +6,7 @@ namespace iceshop{
     export let crc2: CanvasRenderingContext2D;
     export let canvas: HTMLCanvasElement = document.querySelector("canvas")!;
 
-    export function hndload(){
+    export function hndload() {
 
         // canvas def
         let canvas: HTMLCanvasElement | null = document.querySelector("canvas");
@@ -19,7 +19,7 @@ namespace iceshop{
         //startpage
         // start_page();
         // document.getElementById("startbtn")?.addEventListener("click",start)
-        
+
         // Funktionsaufruf
         drawBackground();
         drawTable();
@@ -28,53 +28,49 @@ namespace iceshop{
 
 
         imgData = crc2.getImageData(0, 0, crc2.canvas.width, crc2.canvas.height);
-        
+
 
         crc2.putImageData(imgData, 0, 0);
 
-        // animateperson()
+        // animateperson();
         createperson();
         // window.setInterval(animateperson, 1000) 
-        
+
     }
 
-    export function start_page(){
+    export function start_page() {
         let p_start = document.createElement("p");
         p_start.innerHTML = "Begin Game";
-        p_start.setAttribute("id","start_p")
+        p_start.setAttribute("id", "start_p")
 
         let btn_start = document.createElement("button");
-        btn_start.innerHTML= "Start";
-        btn_start.setAttribute("id","startbtn");
+        btn_start.innerHTML = "Start";
+        btn_start.setAttribute("id", "startbtn");
 
         document.querySelector("body")?.appendChild(p_start);
         document.querySelector("body")?.appendChild(btn_start);
     }
 
-    export function start(){
+    export function start() {
         document.querySelector("canvas")?.classList.remove("hidden")
         document.getElementById("start_p")?.classList.add("hidden")
         document.getElementById("startbtn")?.classList.add("hidden")
         document.getElementById("div1")?.classList.remove("hidden")
-        }
+    }
 
-        let person: human[] = [];
+    let person: human[] = [];
 
     console.log(person[5])
-
-    // export let landingzone: Vector = new Vector(400, 500); //Vector is not a constructor? (Konsole im Browser (debugger) meckert, hab aber keine Ahnung was das Problem ist...)
-    // export let hikingzone: Vector = new Vector(0, 440);
-    // export let flystart: Vector = new Vector(50, 150);
-
+    
     function createperson(): void {
         for (let iperson: number = 0; iperson < 1; iperson++) {
-            let personi: human = new human(new Vector(400, 500), new Vector(400, 500), "happy");
+            let personi: human = new waiter(new Vector(400, 500), new Vector(400, 500), "happy");
             person.push(personi);
-            console.log(personi)
-            console.log(person)
-
+            console.log(personi);
+            console.log(person);
             personi.draw(new Vector(150, 150), new Vector(10, 16));
         }
+        
     }
 
     // function animateperson(): void {
@@ -83,7 +79,7 @@ namespace iceshop{
 
     //     for (let personi of person) {
     //         personi.move(1 / 50); //hiermit kommt er auch nicht klar
-    //         personi.draw();
+    //         personi.draw(new Vector(150, 150), new Vector(10, 16));
     //         window.setInterval(animateperson, 10)
     //     }
 

@@ -82,7 +82,6 @@ namespace iceshop{
      console.log("this"+gotdata);
      console.log("Response", response);
      console.log("before"+ offer);
-     document.querySelector("#div1")!.innerHTML = "Anzahl Kugeln: "+ offer + " Sorte : "+ gotdata["Sorte"]+ "  Souce: "+ gotdata["Souce"]+ "  Sahne: "+ gotdata["radio1"];
    }
    
    communicate("data.json");

@@ -1,66 +1,102 @@
-namespace iceshop{
-class customer extends human{
+namespace iceshop {
+    export class customer extends human {
 
-    // position: Vector;
-    // velocity: Vector;
-    // mood: string;
+        draw(_position: Vector, _size: Vector) {
 
-    // constructor(_velocity: Vector, _position: Vector, _mood: string) {
+            if (this.mood = "happy") {
+                //face
+                crc2.fillStyle = "yellow";
+                crc2.beginPath();
+                crc2.arc(400, 300, 22, 0, 2 * Math.PI);
+                crc2.fill();
+                crc2.closePath();
 
-    //         this.velocity = new Vector(50, 0);
-    //         this.velocity.randomize(120, 20);
-    //         this.velocity = _velocity;
+                //eyes
+                crc2.fillStyle = "black";
+                crc2.beginPath();
+                crc2.arc(394, 298, 3, 0, 2 * Math.PI);
+                crc2.fill();
+                crc2.closePath();
 
-    //         this.position = new Vector(150, 20);
-    //         this.position = _position;
+                crc2.fillStyle = "black";
+                crc2.beginPath();
+                crc2.arc(406, 298, 3, 0, 2 * Math.PI);
+                crc2.fill();
+                crc2.closePath();
 
-    //         this.mood = "happy";
-    //         this.mood = _mood;
-    //     }
-    
-    draw(_position: Vector, _size: Vector) {
+                // mouth happy
+                crc2.strokeStyle = "Black";
+                crc2.beginPath();
+                crc2.arc(400, 305, 4, 0, 1 * Math.PI);
+                crc2.stroke();
+                crc2.closePath();
+            }
 
-        if (this.mood = "happy") {
-            // //Schirm
-            // crc2.beginPath();
-            // crc2.fillStyle = this.changeColor();
-            // crc2.fillRect(_position.x, _position.y, 10, 16);
-            // crc2.fillStyle = this.changeColor();
-            // crc2.fillRect(_position.x, _position.y - 6, 10, 10);
-            // crc2.closePath();
+            if (this.mood = "annoyed") {
 
-            // crc2.beginPath();
-            // crc2.moveTo(_position.x, _position.y);
-            // crc2.lineTo(_position.x - 20, _position.y - 20);
-            // crc2.lineTo(_position.x + 30, _position.y - 30);
-            // crc2.stroke();
-            // crc2.fillStyle = this.changeColor();
-            // crc2.fill();
-            // crc2.closePath();
-        }
+                //face
+                crc2.fillStyle = "yellow";
+                crc2.beginPath();
+                crc2.arc(400, 300, 22, 0, 2 * Math.PI);
+                crc2.fill();
+                crc2.closePath();
 
-        if (this.mood = "annoyed") {
-            //Kein Schirm
-            // crc2.beginPath();
-            // crc2.fillStyle = this.changeColor();
-            // crc2.fillRect(_position.x, _position.y, 10, 16);
+                //eyes
+                crc2.fillStyle = "black";
+                crc2.beginPath();
+                crc2.arc(394, 298, 3, 0, 2 * Math.PI);
+                crc2.fill();
+                crc2.closePath();
 
-            // crc2.fillStyle = this.changeColor();
-            // crc2.fillRect(_position.x, _position.y - 6, 10, 10);
-            // crc2.closePath();
-        }
-        if (this.mood = "unhappy") {
-            //KeinSchirm
-            // crc2.beginPath();
-            // crc2.fillStyle = this.changeColor();
-            // crc2.fillRect(_position.x, _position.y, 10, 16);
+                crc2.fillStyle = "black";
+                crc2.beginPath();
+                crc2.arc(406, 298, 3, 0, 2 * Math.PI);
+                crc2.fill();
+                crc2.closePath();
 
-            // crc2.fillStyle = this.changeColor();
-            // crc2.fillRect(_position.x, _position.y - 6, 10, 10);
-            // crc2.closePath();
-        }
-    };
-}
+                // mouth anooyed
+                crc2.strokeStyle = "Black";
+                crc2.beginPath();
+                crc2.arc(395, 308, 4, 1.3 * Math.PI, 2 * Math.PI);
+                crc2.stroke();
+                crc2.closePath();
+                crc2.rotate(90);
+                crc2.save();
+
+            }
+            if (this.mood = "unhappy") {
+                //face
+                crc2.fillStyle = "yellow";
+                crc2.beginPath();
+                crc2.arc(400, 300, 22, 0, 2 * Math.PI);
+                crc2.fill();
+                crc2.closePath();
+
+                //eyes
+                crc2.fillStyle = "black";
+                crc2.beginPath();
+                crc2.arc(394, 298, 3, 0, 2 * Math.PI);
+                crc2.fill();
+                crc2.closePath();
+
+                crc2.fillStyle = "black";
+                crc2.beginPath();
+                crc2.arc(406, 298, 3, 0, 2 * Math.PI);
+                crc2.fill();
+                crc2.closePath();
+
+                //mouth unhappy
+                crc2.strokeStyle = "Black";
+                crc2.beginPath();
+                crc2.arc(400, 308, 4, 1 * Math.PI, 2 * Math.PI);
+                crc2.stroke();
+                crc2.closePath();
+                crc2.rotate(90);
+                crc2.save();
+            }
+
+        };
+    }
 
 
 

@@ -21,7 +21,7 @@ var iceshop;
         iceshop.hndlformular();
         iceshop.imgData = iceshop.crc2.getImageData(0, 0, iceshop.crc2.canvas.width, iceshop.crc2.canvas.height);
         iceshop.crc2.putImageData(iceshop.imgData, 0, 0);
-        // animateperson()
+        // animateperson();
         createperson();
         // window.setInterval(animateperson, 1000) 
     }
@@ -46,12 +46,9 @@ var iceshop;
     iceshop.start = start;
     let person = [];
     console.log(person[5]);
-    // export let landingzone: Vector = new Vector(400, 500); //Vector is not a constructor? (Konsole im Browser (debugger) meckert, hab aber keine Ahnung was das Problem ist...)
-    // export let hikingzone: Vector = new Vector(0, 440);
-    // export let flystart: Vector = new Vector(50, 150);
     function createperson() {
         for (let iperson = 0; iperson < 1; iperson++) {
-            let personi = new iceshop.human(new iceshop.Vector(400, 500), new iceshop.Vector(400, 500), "happy");
+            let personi = new iceshop.waiter(new iceshop.Vector(400, 500), new iceshop.Vector(400, 500), "happy");
             person.push(personi);
             console.log(personi);
             console.log(person);
@@ -63,7 +60,7 @@ var iceshop;
     //     crc2.putImageData(imgData, 0, 0);
     //     for (let personi of person) {
     //         personi.move(1 / 50); //hiermit kommt er auch nicht klar
-    //         personi.draw();
+    //         personi.draw(new Vector(150, 150), new Vector(10, 16));
     //         window.setInterval(animateperson, 10)
     //     }
     // }

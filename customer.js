@@ -2,56 +2,89 @@
 var iceshop;
 (function (iceshop) {
     class customer extends iceshop.human {
-        // position: Vector;
-        // velocity: Vector;
-        // mood: string;
-        // constructor(_velocity: Vector, _position: Vector, _mood: string) {
-        //         this.velocity = new Vector(50, 0);
-        //         this.velocity.randomize(120, 20);
-        //         this.velocity = _velocity;
-        //         this.position = new Vector(150, 20);
-        //         this.position = _position;
-        //         this.mood = "happy";
-        //         this.mood = _mood;
-        //     }
         draw(_position, _size) {
             if (this.mood = "happy") {
-                // //Schirm
-                // crc2.beginPath();
-                // crc2.fillStyle = this.changeColor();
-                // crc2.fillRect(_position.x, _position.y, 10, 16);
-                // crc2.fillStyle = this.changeColor();
-                // crc2.fillRect(_position.x, _position.y - 6, 10, 10);
-                // crc2.closePath();
-                // crc2.beginPath();
-                // crc2.moveTo(_position.x, _position.y);
-                // crc2.lineTo(_position.x - 20, _position.y - 20);
-                // crc2.lineTo(_position.x + 30, _position.y - 30);
-                // crc2.stroke();
-                // crc2.fillStyle = this.changeColor();
-                // crc2.fill();
-                // crc2.closePath();
+                //face
+                iceshop.crc2.fillStyle = "yellow";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(400, 300, 22, 0, 2 * Math.PI);
+                iceshop.crc2.fill();
+                iceshop.crc2.closePath();
+                //eyes
+                iceshop.crc2.fillStyle = "black";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(394, 298, 3, 0, 2 * Math.PI);
+                iceshop.crc2.fill();
+                iceshop.crc2.closePath();
+                iceshop.crc2.fillStyle = "black";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(406, 298, 3, 0, 2 * Math.PI);
+                iceshop.crc2.fill();
+                iceshop.crc2.closePath();
+                // mouth happy
+                iceshop.crc2.strokeStyle = "Black";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(400, 305, 4, 0, 1 * Math.PI);
+                iceshop.crc2.stroke();
+                iceshop.crc2.closePath();
             }
             if (this.mood = "annoyed") {
-                //Kein Schirm
-                // crc2.beginPath();
-                // crc2.fillStyle = this.changeColor();
-                // crc2.fillRect(_position.x, _position.y, 10, 16);
-                // crc2.fillStyle = this.changeColor();
-                // crc2.fillRect(_position.x, _position.y - 6, 10, 10);
-                // crc2.closePath();
+                //face
+                iceshop.crc2.fillStyle = "yellow";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(400, 300, 22, 0, 2 * Math.PI);
+                iceshop.crc2.fill();
+                iceshop.crc2.closePath();
+                //eyes
+                iceshop.crc2.fillStyle = "black";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(394, 298, 3, 0, 2 * Math.PI);
+                iceshop.crc2.fill();
+                iceshop.crc2.closePath();
+                iceshop.crc2.fillStyle = "black";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(406, 298, 3, 0, 2 * Math.PI);
+                iceshop.crc2.fill();
+                iceshop.crc2.closePath();
+                // mouth anooyed
+                iceshop.crc2.strokeStyle = "Black";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(395, 308, 4, 1.3 * Math.PI, 2 * Math.PI);
+                iceshop.crc2.stroke();
+                iceshop.crc2.closePath();
+                iceshop.crc2.rotate(90);
+                iceshop.crc2.save();
             }
             if (this.mood = "unhappy") {
-                //KeinSchirm
-                // crc2.beginPath();
-                // crc2.fillStyle = this.changeColor();
-                // crc2.fillRect(_position.x, _position.y, 10, 16);
-                // crc2.fillStyle = this.changeColor();
-                // crc2.fillRect(_position.x, _position.y - 6, 10, 10);
-                // crc2.closePath();
+                //face
+                iceshop.crc2.fillStyle = "yellow";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(400, 300, 22, 0, 2 * Math.PI);
+                iceshop.crc2.fill();
+                iceshop.crc2.closePath();
+                //eyes
+                iceshop.crc2.fillStyle = "black";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(394, 298, 3, 0, 2 * Math.PI);
+                iceshop.crc2.fill();
+                iceshop.crc2.closePath();
+                iceshop.crc2.fillStyle = "black";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(406, 298, 3, 0, 2 * Math.PI);
+                iceshop.crc2.fill();
+                iceshop.crc2.closePath();
+                //mouth unhappy
+                iceshop.crc2.strokeStyle = "Black";
+                iceshop.crc2.beginPath();
+                iceshop.crc2.arc(400, 308, 4, 1 * Math.PI, 2 * Math.PI);
+                iceshop.crc2.stroke();
+                iceshop.crc2.closePath();
+                iceshop.crc2.rotate(90);
+                iceshop.crc2.save();
             }
         }
         ;
     }
+    iceshop.customer = customer;
 })(iceshop || (iceshop = {}));
 //# sourceMappingURL=customer.js.map
