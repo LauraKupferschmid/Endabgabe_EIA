@@ -21,7 +21,8 @@ var iceshop;
         iceshop.imgData = iceshop.crc2.getImageData(0, 0, iceshop.crc2.canvas.width, iceshop.crc2.canvas.height);
         iceshop.crc2.putImageData(iceshop.imgData, 0, 0);
         // animateperson();
-        createperson();
+        createWaiter();
+        createCutsomer();
         // window.setInterval(animateperson, 1000) 
     }
     iceshop.hndload = hndload;
@@ -45,13 +46,22 @@ var iceshop;
     iceshop.start = start;
     let person = [];
     console.log(person[5]);
-    function createperson() {
+    function createWaiter() {
         for (let iperson = 0; iperson < 1; iperson++) {
             let personi = new iceshop.waiter(new iceshop.Vector(400, 500), new iceshop.Vector(400, 500), "happy");
             person.push(personi);
             console.log(personi);
             console.log(person);
             personi.draw(new iceshop.Vector(150, 150), new iceshop.Vector(10, 16));
+        }
+    }
+    function createCutsomer() {
+        for (let iperson = 0; iperson < 1; iperson++) {
+            let personi = new iceshop.customer(new iceshop.Vector(800, 500), new iceshop.Vector(800, 500), "happy");
+            person.push(personi);
+            console.log(personi);
+            console.log(person);
+            personi.draw(new iceshop.Vector(400, 350), new iceshop.Vector(30, 16));
         }
     }
     // function animateperson(): void {

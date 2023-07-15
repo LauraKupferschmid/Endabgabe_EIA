@@ -32,7 +32,8 @@ namespace iceshop {
         crc2.putImageData(imgData, 0, 0);
 
         // animateperson();
-        createperson();
+        createWaiter();
+        createCutsomer();
         // window.setInterval(animateperson, 1000) 
 
     }
@@ -61,7 +62,7 @@ namespace iceshop {
 
     console.log(person[5])
 
-    function createperson(): void {
+    function createWaiter(): void {
         for (let iperson: number = 0; iperson < 1; iperson++) {
             let personi: human = new waiter(new Vector(400, 500), new Vector(400, 500), "happy");
             person.push(personi);
@@ -69,8 +70,18 @@ namespace iceshop {
             console.log(person);
             personi.draw(new Vector(150, 150), new Vector(10, 16));
         }
-        
     }
+
+    function createCutsomer(): void {
+        for (let iperson: number = 0; iperson < 1; iperson++) {
+            let personi: human = new customer(new Vector(800, 500), new Vector(800, 500), "happy");
+            person.push(personi);
+            console.log(personi);
+            console.log(person);
+            personi.draw(new Vector(400, 350), new Vector(30, 16));
+        }
+    }
+
 
     // function animateperson(): void {
     //     crc2.clearRect(0, 0, 1000, 600);

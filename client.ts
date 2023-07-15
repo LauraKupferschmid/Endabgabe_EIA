@@ -1,20 +1,15 @@
 namespace iceshop{
 
     export function hndlformular () {
-        // trash.addEventListener("click", trshbtn);
         edit.addEventListener("click", editbtn);
         document.querySelector("#add")!.addEventListener("click", addbtn); 
-        // document.querySelector("#new")!.addEventListener("click", newbtn);
         submit.addEventListener("click", sendTask);
     }
 
     export interface data  {
         [key: string]: FormDataEntryValue;
        };    
-
-    // let trash = document.createElement("button"); // delet button erstellen
-    // trash.setAttribute("id", "trash");
-    // trash.innerHTML = "Delete";
+       
     let edit = document.createElement("button");   // edit button erstellen
     edit.setAttribute("id", "edit");
     edit.innerHTML = "Edit";
