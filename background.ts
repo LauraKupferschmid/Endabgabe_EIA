@@ -128,36 +128,36 @@ namespace iceshop{
 
 
 
-        //icecream
-        crc2.fillStyle = "sienna"
-        crc2.beginPath();
-        crc2.arc(300, 300, 22, 0, 2 * Math.PI);
-        crc2.fill();
-        crc2.closePath();
+        // //icecream
+        // crc2.fillStyle = "sienna"
+        // crc2.beginPath();
+        // crc2.arc(300, 300, 22, 0, 2 * Math.PI);
+        // crc2.fill();
+        // crc2.closePath();
 
-        crc2.fillStyle = "sienna"
-        crc2.beginPath();
-        crc2.arc(320, 320, 22, 0, 2 * Math.PI);
-        crc2.fill();
-        crc2.closePath();
+        // crc2.fillStyle = "sienna"
+        // crc2.beginPath();
+        // crc2.arc(320, 320, 22, 0, 2 * Math.PI);
+        // crc2.fill();
+        // crc2.closePath();
 
-        crc2.fillStyle = "sienna"
-        crc2.beginPath();
-        crc2.arc(280, 320, 22, 0, 2 * Math.PI);
-        crc2.fill();
-        crc2.closePath();
+        // crc2.fillStyle = "sienna"
+        // crc2.beginPath();
+        // crc2.arc(280, 320, 22, 0, 2 * Math.PI);
+        // crc2.fill();
+        // crc2.closePath();
 
-        crc2.fillStyle = "red"
-        crc2.beginPath();
-        crc2.ellipse(300,300,2,5,30,0,2*Math.PI);
-        crc2.fill();
-        crc2.closePath();
+        // crc2.fillStyle = "red"
+        // crc2.beginPath();
+        // crc2.ellipse(300,300,2,5,30,0,2*Math.PI);
+        // crc2.fill();
+        // crc2.closePath();
 
-        crc2.fillStyle = "blue"
-        crc2.beginPath();
-        crc2.ellipse(300,300,2,5,30,0,2*Math.PI);
-        crc2.fill();
-        crc2.closePath();
+        // crc2.fillStyle = "blue"
+        // crc2.beginPath();
+        // crc2.ellipse(300,300,2,5,30,0,2*Math.PI);
+        // crc2.fill();
+        // crc2.closePath();
 
     }
 
