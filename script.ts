@@ -74,11 +74,11 @@ namespace iceshop {
 
     function createCutsomer(): void {
         for (let iperson: number = 0; iperson < 1; iperson++) {
-            let personi: human = new customer(new Vector(800, 500), new Vector(800, 500),"happy");
+            let personi: human = new customer(new Vector(20, 30), new Vector(20, 30),"happy");
             person.push(personi);
             console.log(personi);
             console.log(person);
-            personi.draw(new Vector(800, 500),new Vector(800, 500));
+            personi.draw(new Vector(20, 30),new Vector(20, 30));
         }
     }
 
