@@ -37,7 +37,7 @@ var iceshop;
             this.ctx.fill();
             this.ctx.closePath;
         }
-        move() {
+        updateCharacterPosition() {
             if (this.keys['w'])
                 this.y -= this.speed;
             if (this.keys['s'])
@@ -55,11 +55,11 @@ var iceshop;
         }
         gameLoop() {
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-            this.move();
+            this.updateCharacterPosition();
             this.draw();
             requestAnimationFrame(() => this.gameLoop());
         }
     }
     iceshop.Waiter = Waiter;
 })(iceshop || (iceshop = {}));
-//# sourceMappingURL=Waiter.js.map
+//# sourceMappingURL=waiter.js.map

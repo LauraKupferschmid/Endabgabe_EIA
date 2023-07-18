@@ -5,7 +5,7 @@ namespace iceshop{
 
         // boden
         crc2.fillStyle ="lightblue";
-        crc2.fillRect(0, 0,900,500);
+        crc2.fillRect(0, 0,900,4890);
 
         // gehweg
         crc2.fillStyle ="grey";
@@ -24,7 +24,7 @@ namespace iceshop{
 
         crc2.fillStyle ="grey";
         crc2.fillRect(0,220,300,50);
-    };
+    }
 
     export function drawTable(): void {
         console.log("Tisch");
@@ -109,7 +109,7 @@ namespace iceshop{
             // Tisch 4 Stuhl 4
             crc2.fillStyle ="saddlebrown";
             crc2.fillRect(800, 115,40,40);
-    };
+    }
 
     export function drawCounter(): void {
         console.log("Counter");
@@ -125,6 +125,44 @@ namespace iceshop{
         // Erbeere
         crc2.fillStyle ="lightcoral";
         crc2.fillRect(260,180,30,40);
-    };
-  
+
+
+
+        // //icecream
+        // crc2.fillStyle = "sienna"
+        // crc2.beginPath();
+        // crc2.arc(300, 300, 22, 0, 2 * Math.PI);
+        // crc2.fill();
+        // crc2.closePath();
+
+        // crc2.fillStyle = "sienna"
+        // crc2.beginPath();
+        // crc2.arc(320, 320, 22, 0, 2 * Math.PI);
+        // crc2.fill();
+        // crc2.closePath();
+
+        // crc2.fillStyle = "sienna"
+        // crc2.beginPath();
+        // crc2.arc(280, 320, 22, 0, 2 * Math.PI);
+        // crc2.fill();
+        // crc2.closePath();
+
+        // crc2.fillStyle = "red"
+        // crc2.beginPath();
+        // crc2.ellipse(300,300,2,5,30,0,2*Math.PI);
+        // crc2.fill();
+        // crc2.closePath();
+
+        // crc2.fillStyle = "blue"
+        // crc2.beginPath();
+        // crc2.ellipse(300,300,2,5,30,0,2*Math.PI);
+        // crc2.fill();
+        // crc2.closePath();
+
+    }
+
+
+
+    
+    
 }
