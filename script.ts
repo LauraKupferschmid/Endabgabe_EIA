@@ -87,6 +87,11 @@ namespace iceshop {
           customeri.draw();
   }
 
+  document.getElementById("order")?.addEventListener("click",order)
+
+  function order (){
+    document.getElementById("div2")?.classList.remove("hidden");
+  }
 
 
 

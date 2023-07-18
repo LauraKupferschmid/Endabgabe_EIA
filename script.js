@@ -61,5 +61,9 @@ var iceshop;
         // custom.push(customeri); //brauch ich am ende für mehrere customer + for-schleife fürs erzeugen
         customeri.draw();
     }
+    document.getElementById("order")?.addEventListener("click", order);
+    function order() {
+        document.getElementById("div2")?.classList.remove("hidden");
+    }
 })(iceshop || (iceshop = {}));
 //# sourceMappingURL=script.js.map
