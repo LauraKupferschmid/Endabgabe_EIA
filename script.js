@@ -20,10 +20,12 @@ var iceshop;
         iceshop.hndlformular();
         iceshop.imgData = iceshop.crc2.getImageData(0, 0, iceshop.crc2.canvas.width, iceshop.crc2.canvas.height);
         iceshop.crc2.putImageData(iceshop.imgData, 0, 0);
-        // animateperson();
-        // createWaiter();
+        createWaiter();
         createCutsomer();
+        // animateperson();
+        animatewaiter();
         // window.setInterval(animateperson, 1000) 
+        // window.setInterval(animatewaiter, 1000) 
     }
     iceshop.hndload = hndload;
     function start_page() {
@@ -44,33 +46,52 @@ var iceshop;
         document.getElementById("div1")?.classList.remove("hidden");
     }
     iceshop.start = start;
-    let person = [];
-    console.log(person[5]);
-    // function createWaiter(): void {
-    //     for (let iperson: number = 0; iperson < 1; iperson++) {
-    //         let personi: human = new waiter(new Vector(400, 500), new Vector(400, 500), "happy");
-    //         person.push(personi);
-    //         console.log(personi);
-    //         console.log(person);
-    //         personi.draw(new Vector(150, 150), new Vector(10, 16));
-    //     }
-    // }
+    let custom = [];
+    let wait = [];
+    console.log(wait[0]);
+    function createWaiter() {
+        for (let iwait = 0; iwait < 1; iwait++) {
+            let waiti = new iceshop.waiter(new iceshop.Vector(0, 0), new iceshop.Vector(600, 300), "happy");
+            wait.push(waiti);
+            console.log(waiti);
+            console.log(waiti);
+        }
+    }
     function createCutsomer() {
-        for (let iperson = 0; iperson < 1; iperson++) {
-            let personi = new iceshop.customer(new iceshop.Vector(800, 500), new iceshop.Vector(800, 500), "happy");
-            person.push(personi);
+        for (let icustom = 0; icustom < 1; icustom++) {
+            let personi = new iceshop.customer(new iceshop.Vector(30, 30), new iceshop.Vector(200, 400), "happy");
+            custom.push(personi);
             console.log(personi);
-            console.log(person);
-            personi.draw(new iceshop.Vector(800, 500), new iceshop.Vector(800, 500));
+            console.log(custom);
         }
     }
     // function animateperson(): void {
     //     crc2.clearRect(0, 0, 1000, 600);
     //     crc2.putImageData(imgData, 0, 0);
-    //     for (let personi of person) {
-    //         personi.move(1 / 50); //hiermit kommt er auch nicht klar
-    //         personi.draw(new Vector(150, 150), new Vector(10, 16));
-    //         window.setInterval(animateperson,20)
+    //     for (let personi of custom) {
+    //         // personi.move(); //hiermit kommt er auch nicht klar
+    //         personi.draw(new Vector(250, 250), new Vector(50, 50));
+    //         // window.setInterval(animateperson,200)
+    //     }
+    // }
+    function animatewaiter() {
+        iceshop.crc2.clearRect(0, 0, 1000, 600);
+        iceshop.crc2.putImageData(iceshop.imgData, 0, 0);
+        for (let waiti of wait) {
+            waiti.move();
+            waiti.draw(new iceshop.Vector(20, 20), new iceshop.Vector(50, 50));
+        }
+        for (let personi of custom) {
+            personi.move();
+            personi.draw(new iceshop.Vector(300, 300), new iceshop.Vector(50, 50));
+        }
+    }
+    // function animateperson(): void {
+    //     crc2.clearRect(0, 0, 1000, 600);
+    //     crc2.putImageData(imgData, 0, 0);
+    //     for (let personi of custom) {
+    //         personi.move();
+    //         personi.draw(new Vector(250, 250), new Vector(50, 50));
     //     }
     // }
 })(iceshop || (iceshop = {}));

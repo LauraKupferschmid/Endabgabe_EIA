@@ -8,9 +8,11 @@ namespace iceshop{
 
         constructor(_velocity: Vector, _position: Vector, _mood: string) {
 
+
             this.velocity = new Vector(50, 0);
-            this.velocity.randomize(120, 20);
-            this.velocity = _velocity;
+            this.velocity = new Vector(120, 20);
+
+            this.position = new Vector(Math.random() * crc2.canvas.width, Math.random() * crc2.canvas.height)
 
             this.position = new Vector(150, 20);
             this.position = _position;

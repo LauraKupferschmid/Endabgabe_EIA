@@ -4,7 +4,7 @@ var iceshop;
     class customer extends iceshop.human {
         draw(_position, _size) {
             console.log(this.mood);
-            if (this.mood = "happy") {
+            if (this.mood == "happy") {
                 //face
                 iceshop.crc2.fillStyle = "yellow";
                 iceshop.crc2.beginPath();
@@ -30,7 +30,7 @@ var iceshop;
                 iceshop.crc2.closePath();
             }
             ;
-            if (this.mood = "annoyed") {
+            if (this.mood == "annoyed") {
                 //face
                 iceshop.crc2.fillStyle = "yellow";
                 iceshop.crc2.beginPath();
@@ -57,7 +57,7 @@ var iceshop;
                 iceshop.crc2.rotate(90);
             }
             ;
-            if (this.mood = "mad") {
+            if (this.mood == "mad") {
                 //face
                 iceshop.crc2.fillStyle = "yellow";
                 iceshop.crc2.beginPath();

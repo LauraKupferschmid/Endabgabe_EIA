@@ -41,8 +41,6 @@ namespace iceshop {
             crc2.lineTo(390,315);
             crc2.fill();
             crc2.closePath
-
-
         }
 
     }

@@ -7,8 +7,8 @@ var iceshop;
         mood;
         constructor(_velocity, _position, _mood) {
             this.velocity = new iceshop.Vector(50, 0);
-            this.velocity.randomize(120, 20);
-            this.velocity = _velocity;
+            this.velocity = new iceshop.Vector(120, 20);
+            this.position = new iceshop.Vector(Math.random() * iceshop.crc2.canvas.width, Math.random() * iceshop.crc2.canvas.height);
             this.position = new iceshop.Vector(150, 20);
             this.position = _position;
             this.mood = "happy";

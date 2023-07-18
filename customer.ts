@@ -3,7 +3,7 @@ namespace iceshop {
 
         draw(_position: Vector, _size: Vector) {
             console.log(this.mood)
-          if (this.mood = "happy"){
+          if (this.mood == "happy"){
                 //face
                 crc2.fillStyle = "yellow";
                 crc2.beginPath();
@@ -32,7 +32,7 @@ namespace iceshop {
                 crc2.closePath();
             };
 
-            if (this.mood = "annoyed"){
+            if (this.mood == "annoyed"){
 
                 //face
                 crc2.fillStyle = "yellow";
@@ -65,7 +65,7 @@ namespace iceshop {
 
             };
              
-            if (this.mood = "mad"){
+            if (this.mood == "mad"){
                 //face
                 crc2.fillStyle = "yellow";
                 crc2.beginPath();

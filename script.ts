@@ -31,11 +31,14 @@ namespace iceshop {
 
         crc2.putImageData(imgData, 0, 0);
 
-        // animateperson();
-        // createWaiter();
+        
+        createWaiter();
         createCutsomer();
+        // animateperson();
+        animatewaiter();
         // window.setInterval(animateperson, 1000) 
-
+        // window.setInterval(animatewaiter, 1000) 
+ 
     }
 
     export function start_page() {
@@ -58,44 +61,64 @@ namespace iceshop {
         document.getElementById("div1")?.classList.remove("hidden")
     }
 
-    let person: human[] = [];
+    let custom: customer[] = [];
+    let wait: waiter[] = [];
 
-    console.log(person[5])
+    console.log(wait[0])
 
-    // function createWaiter(): void {
-    //     for (let iperson: number = 0; iperson < 1; iperson++) {
-    //         let personi: human = new waiter(new Vector(400, 500), new Vector(400, 500), "happy");
-    //         person.push(personi);
-    //         console.log(personi);
-    //         console.log(person);
-    //         personi.draw(new Vector(150, 150), new Vector(10, 16));
-    //     }
-    // }
-
-    function createCutsomer(): void {
-        for (let iperson: number = 0; iperson < 1; iperson++) {
-            let personi: human = new customer(new Vector(20, 30), new Vector(20, 30),"happy");
-            person.push(personi);
-            console.log(personi);
-            console.log(person);
-            personi.draw(new Vector(20, 30),new Vector(20, 30));
+    function createWaiter(): void {
+        for (let iwait: number = 0; iwait < 1; iwait++) {
+            let waiti: human = new waiter(new Vector(0, 0), new Vector(600, 300), "happy");
+            wait.push(waiti);
+            console.log(waiti);
+            console.log(waiti);
         }
     }
 
+    function createCutsomer(): void {
+        for (let icustom: number = 0; icustom < 1; icustom++) {
+            let personi: human = new customer(new Vector(30, 30), new Vector(200, 400),"happy");
+            custom.push(personi);
+            console.log(personi);
+            console.log(custom);
+        }
+    }
+ 
+    // function animateperson(): void {
+    //     crc2.clearRect(0, 0, 1000, 600);
+    //     crc2.putImageData(imgData, 0, 0);
+
+    //     for (let personi of custom) {
+    //         // personi.move(); //hiermit kommt er auch nicht klar
+    //         personi.draw(new Vector(250, 250), new Vector(50, 50));
+    //         // window.setInterval(animateperson,200)
+    //     }
+    // }
+
+    function animatewaiter(): void {
+        crc2.clearRect(0, 0, 1000, 600);
+        crc2.putImageData(imgData, 0, 0);
+
+        for (let waiti of wait) {
+            waiti.move();
+            waiti.draw(new Vector(20, 20), new Vector(50, 50));
+        }
+
+        for (let personi of custom) {
+            personi.move();
+            personi.draw(new Vector(300, 300), new Vector(50, 50));
+        }
+    
+    }
 
     // function animateperson(): void {
     //     crc2.clearRect(0, 0, 1000, 600);
     //     crc2.putImageData(imgData, 0, 0);
 
-    //     for (let personi of person) {
-    //         personi.move(1 / 50); //hiermit kommt er auch nicht klar
-    //         personi.draw(new Vector(150, 150), new Vector(10, 16));
-    //         window.setInterval(animateperson,20)
+    //     for (let personi of custom) {
+    //         personi.move();
+    //         personi.draw(new Vector(250, 250), new Vector(50, 50));
     //     }
-
     // }
-
-
-
 
 }
