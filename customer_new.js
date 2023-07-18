@@ -52,4 +52,4 @@ var iceshop;
     }
     iceshop.Customer = Customer;
 })(iceshop || (iceshop = {}));
-//# sourceMappingURL=customer_new.js.map
+//# sourceMappingURL=Customer_new.js.map

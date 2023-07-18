@@ -3,8 +3,6 @@ namespace iceshop {
 export class Waiter extends Human {
 
     draw(): void {
-
-
         //face
         this.ctx.fillStyle = "yellow";
         this.ctx.beginPath();

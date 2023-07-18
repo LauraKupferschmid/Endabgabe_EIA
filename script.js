@@ -12,7 +12,7 @@ var iceshop;
             return;
         iceshop.crc2 = canvas.getContext("2d");
         //startpage
-        startPage();
+        start_page();
         document.getElementById("startbtn")?.addEventListener("click", start);
         // Funktionsaufruf
         iceshop.drawBackground();
@@ -25,7 +25,7 @@ var iceshop;
         createCutsomer();
     }
     iceshop.hndload = hndload;
-    function startPage() {
+    function start_page() {
         let p_start = document.createElement("p");
         p_start.innerHTML = "Begin Game";
         p_start.setAttribute("id", "start_p");
@@ -35,7 +35,7 @@ var iceshop;
         document.querySelector("body")?.appendChild(p_start);
         document.querySelector("body")?.appendChild(btn_start);
     }
-    iceshop.startPage = startPage;
+    iceshop.start_page = start_page;
     function start() {
         document.querySelector("canvas")?.classList.remove("hidden");
         document.getElementById("game-canvas")?.classList.remove("hidden");

@@ -18,7 +18,7 @@ namespace iceshop {
     
 
     //startpage
-    startPage();
+    start_page();
     document.getElementById("startbtn")?.addEventListener("click",start);
 
     // Funktionsaufruf
@@ -38,13 +38,14 @@ namespace iceshop {
 
   }
 
-  export function startPage() {
+  export function start_page() {
     let p_start = document.createElement("p");
     p_start.innerHTML = "Begin Game";
     p_start.setAttribute("id", "start_p")
 
     let btn_start = document.createElement("button");
     btn_start.innerHTML = "Start";
+
     btn_start.setAttribute("id", "startbtn");
 
     document.querySelector("body")?.appendChild(p_start);
