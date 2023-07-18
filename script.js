@@ -11,10 +11,6 @@ var iceshop;
         if (!canvas)
             return;
         iceshop.crc2 = canvas.getContext("2d");
-        //  if (!gamecanvas)
-        //       return;
-        //   ctx = <CanvasRenderingContext2D>canvas!.getContext("2d")
-        // Server communi
         //startpage
         startPage();
         document.getElementById("startbtn")?.addEventListener("click", start);
@@ -22,7 +18,7 @@ var iceshop;
         iceshop.drawBackground();
         iceshop.drawTable();
         iceshop.drawCounter();
-        iceshop.hndlformular();
+        iceshop.hndlformular(); // Server communi
         iceshop.imgData = iceshop.ctx.getImageData(0, 0, iceshop.crc2.canvas.width, iceshop.crc2.canvas.height);
         iceshop.ctx.putImageData(iceshop.imgData, 0, 0);
         createWaiter();
@@ -52,7 +48,6 @@ var iceshop;
     // Get the canvas element
     iceshop.gamecanvas = document.getElementById('game-canvas');
     // let custom: customer[] = [];
-    // console.log(wait[0])
     function createWaiter() {
         let waiteri = new iceshop.Waiter(iceshop.gamecanvas);
         waiteri.draw();

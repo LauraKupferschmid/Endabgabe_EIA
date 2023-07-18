@@ -15,12 +15,8 @@ namespace iceshop {
     if (!canvas)
       return;
     crc2 = <CanvasRenderingContext2D>canvas!.getContext("2d")
-    //  if (!gamecanvas)
-    //       return;
-    //   ctx = <CanvasRenderingContext2D>canvas!.getContext("2d")
-
-
-    // Server communi
+  
+    
 
     //startpage
     startPage();
@@ -30,17 +26,13 @@ namespace iceshop {
     drawBackground();
     drawTable();
     drawCounter();
-    hndlformular();
+    hndlformular();// Server communi
 
 
     imgData = ctx.getImageData(0, 0, crc2.canvas.width, crc2.canvas.height);
 
 
     ctx.putImageData(imgData, 0, 0);
-
-
-
-
 
     createWaiter();
     createCutsomer();
@@ -61,13 +53,13 @@ namespace iceshop {
   }
 
   export function start() {
-    document.querySelector("canvas")?.classList.remove("hidden")
-    document.getElementById("game-canvas")?.classList.remove("hidden")
-    document.getElementById("start_p")?.classList.add("hidden")
-    document.getElementById("startbtn")?.classList.add("hidden")
-    document.getElementById("div1")?.classList.remove("hidden")
+    document.querySelector("canvas")?.classList.remove("hidden");
+    document.getElementById("game-canvas")?.classList.remove("hidden");
+    document.getElementById("start_p")?.classList.add("hidden");
+    document.getElementById("startbtn")?.classList.add("hidden");
+    document.getElementById("div1")?.classList.remove("hidden");
 
-    alert("Ich bin leider nicht soweit das ich Clickevents auf die Canvas Elemente machen konnte! Als Ersatz hab ich deswegen den Orderbutton eingefügt damit man das Orderformular ansehen und verwenden kann. Das Orderfomular ist leider auch nicht ganz fertig. Das ist alles aber im Konzept")
+    alert("Ich bin leider nicht soweit das ich Clickevents auf die Canvas Elemente machen konnte! Als Ersatz hab ich deswegen den Orderbutton eingefügt damit man das Orderformular ansehen und verwenden kann. Das Orderfomular ist leider auch nicht ganz fertig. Das ist alles aber im Konzept");
   }
 
   // Get the canvas element
@@ -75,18 +67,17 @@ namespace iceshop {
 
   // let custom: customer[] = [];
 
-  // console.log(wait[0])
 
   function createWaiter(): void {
-          let waiteri: Waiter = new Waiter(gamecanvas);
-          waiteri.draw();  
+    let waiteri: Waiter = new Waiter(gamecanvas);
+    waiteri.draw();  
     
   }
 
   function createCutsomer(): void {
-          let customeri: Customer = new Customer(gamecanvas);
-          // custom.push(customeri); //brauch ich am ende für mehrere customer + for-schleife fürs erzeugen
-          customeri.draw();
+    let customeri: Customer = new Customer(gamecanvas);
+    // custom.push(customeri); //brauch ich am ende für mehrere customer + for-schleife fürs erzeugen
+    customeri.draw();
   }
 
   document.getElementById("order")?.addEventListener("click",order)

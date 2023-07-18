@@ -58,7 +58,6 @@ var iceshop;
         let response = await fetch(_url);
         let offer = await response.text();
         let gotdata = JSON.parse(offer);
-        // gotdata is empty, offer is a string, cant read the stuff out
         console.log("this" + gotdata);
         console.log("Response", response);
         console.log("before" + offer);

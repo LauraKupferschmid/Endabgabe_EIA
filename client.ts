@@ -73,7 +73,6 @@ namespace iceshop{
      let response: Response = await fetch(_url);
      let offer: string= await response.text();
      let gotdata: data = JSON.parse(offer);
-     // gotdata is empty, offer is a string, cant read the stuff out
      console.log("this"+gotdata);
      console.log("Response", response);
      console.log("before"+ offer);
