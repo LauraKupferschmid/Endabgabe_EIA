@@ -66,6 +66,8 @@ namespace iceshop {
     document.getElementById("start_p")?.classList.add("hidden")
     document.getElementById("startbtn")?.classList.add("hidden")
     document.getElementById("div1")?.classList.remove("hidden")
+
+    alert("Ich bin leider nicht soweit das ich Clickevents auf die Canvas Elemente machen konnte! Als Ersatz hab ich deswegen den Orderbutton eingefügt damit man das Orderformular ansehen und verwenden kann. Das Orderfomular ist leider auch nicht ganz fertig. Das ist alles aber im Konzept")
   }
 
   // Get the canvas element
