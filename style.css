@@ -10,6 +10,15 @@ canvas{
     border-style: solid;
 }
 
+#game-canvas{
+    position: absolute;
+    top: 6px;
+    left: 6px;   
+    border: 4px;
+    border-color: black;
+    border-style: solid;
+}
+
 .hidden{
     display: none;
 }
