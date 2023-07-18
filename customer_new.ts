@@ -2,7 +2,6 @@ namespace iceshop {
   export class customer extends human {
     draw(): void {
 
-
       //face
       this.ctx.fillStyle = "yellow";
       this.ctx.beginPath();

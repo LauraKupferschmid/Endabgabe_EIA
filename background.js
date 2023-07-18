@@ -5,7 +5,7 @@ var iceshop;
         console.log("Background");
         // boden
         iceshop.crc2.fillStyle = "lightblue";
-        iceshop.crc2.fillRect(0, 0, 900, 4890);
+        iceshop.crc2.fillRect(0, 0, 900, 500);
         // gehweg
         iceshop.crc2.fillStyle = "grey";
         iceshop.crc2.fillRect(0, 500, 900, 60);
@@ -21,6 +21,7 @@ var iceshop;
         iceshop.crc2.fillRect(0, 220, 300, 50);
     }
     iceshop.drawBackground = drawBackground;
+    ;
     function drawTable() {
         console.log("Tisch");
         // Tisch 1
@@ -85,6 +86,7 @@ var iceshop;
         iceshop.crc2.fillRect(800, 115, 40, 40);
     }
     iceshop.drawTable = drawTable;
+    ;
     function drawCounter() {
         console.log("Counter");
         // Schokolade
@@ -96,33 +98,8 @@ var iceshop;
         // Erbeere
         iceshop.crc2.fillStyle = "lightcoral";
         iceshop.crc2.fillRect(260, 180, 30, 40);
-        // //icecream
-        // crc2.fillStyle = "sienna"
-        // crc2.beginPath();
-        // crc2.arc(300, 300, 22, 0, 2 * Math.PI);
-        // crc2.fill();
-        // crc2.closePath();
-        // crc2.fillStyle = "sienna"
-        // crc2.beginPath();
-        // crc2.arc(320, 320, 22, 0, 2 * Math.PI);
-        // crc2.fill();
-        // crc2.closePath();
-        // crc2.fillStyle = "sienna"
-        // crc2.beginPath();
-        // crc2.arc(280, 320, 22, 0, 2 * Math.PI);
-        // crc2.fill();
-        // crc2.closePath();
-        // crc2.fillStyle = "red"
-        // crc2.beginPath();
-        // crc2.ellipse(300,300,2,5,30,0,2*Math.PI);
-        // crc2.fill();
-        // crc2.closePath();
-        // crc2.fillStyle = "blue"
-        // crc2.beginPath();
-        // crc2.ellipse(300,300,2,5,30,0,2*Math.PI);
-        // crc2.fill();
-        // crc2.closePath();
     }
     iceshop.drawCounter = drawCounter;
+    ;
 })(iceshop || (iceshop = {}));
 //# sourceMappingURL=background.js.map
