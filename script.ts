@@ -67,13 +67,13 @@ namespace iceshop {
   // console.log(wait[0])
 
   function createWaiter(): void {
-          let waiteri: waiter = new waiter(gamecanvas);
+          let waiteri: Waiter = new Waiter(gamecanvas);
           waiteri.draw();  
     
   }
 
   function createCutsomer(): void {
-          let customeri: customer = new customer(gamecanvas);
+          let customeri: Customer = new Customer(gamecanvas);
           // custom.push(customeri); //brauch ich am ende für mehrere customer + for-schleife fürs erzeugen
           customeri.draw();
   }

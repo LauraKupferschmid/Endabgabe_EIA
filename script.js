@@ -50,11 +50,11 @@ var iceshop;
     // let custom: customer[] = []; // brauch ich für später für mehrere customer
     // console.log(wait[0])
     function createWaiter() {
-        let waiteri = new iceshop.waiter(iceshop.gamecanvas);
+        let waiteri = new iceshop.Waiter(iceshop.gamecanvas);
         waiteri.draw();
     }
     function createCutsomer() {
-        let customeri = new iceshop.customer(iceshop.gamecanvas);
+        let customeri = new iceshop.Customer(iceshop.gamecanvas);
         // custom.push(customeri); //brauch ich am ende für mehrere customer + for-schleife fürs erzeugen
         customeri.draw();
     }

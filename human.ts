@@ -1,6 +1,6 @@
 namespace iceshop {
 
-  export class human {
+  export class Human {
 
     x: number;
     y: number;

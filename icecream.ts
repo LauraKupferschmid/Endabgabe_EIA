@@ -1,6 +1,6 @@
 namespace iceshop {
 
-    export class icecream {
+    export class icecream{
 
         position: Vector;
         icecream: string;

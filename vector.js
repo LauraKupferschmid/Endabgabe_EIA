@@ -38,4 +38,4 @@ var iceshop;
     }
     iceshop.Vector = Vector;
 })(iceshop || (iceshop = {}));
-//# sourceMappingURL=vector.js.map
+//# sourceMappingURL=Vector.js.map

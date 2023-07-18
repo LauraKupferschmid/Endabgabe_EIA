@@ -1,7 +1,7 @@
 "use strict";
 var iceshop;
 (function (iceshop) {
-    class human {
+    class Human {
         x;
         y;
         speed;
@@ -68,6 +68,6 @@ var iceshop;
         }
         ;
     }
-    iceshop.human = human;
+    iceshop.Human = Human;
 })(iceshop || (iceshop = {}));
-//# sourceMappingURL=human.js.map
+//# sourceMappingURL=Human.js.map

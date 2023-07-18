@@ -1,5 +1,5 @@
 namespace iceshop {
-  export class customer extends human {
+  export class Customer extends Human {
     draw(): void {
 
       //face

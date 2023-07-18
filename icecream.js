@@ -273,4 +273,4 @@ var iceshop;
     }
     iceshop.icecream = icecream;
 })(iceshop || (iceshop = {}));
-//# sourceMappingURL=icecream.js.map
+//# sourceMappingURL=Icecream.js.map

@@ -1,6 +1,6 @@
 namespace iceshop {
 
-export class waiter extends human {
+export class Waiter extends Human {
 
     draw(): void {
 
