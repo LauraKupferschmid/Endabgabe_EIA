@@ -91,14 +91,8 @@ namespace iceshop{
     newP.innerHTML ="Anzahl Kugeln: " + taskArray[0] + ", <br> Sorte: " + taskArray[1] + ", <br>Souce: " + taskArray[2] + ", <br>Streusel: " + taskArray[3] + "  <br>Sahne: " + taskArray[4];
     e.preventDefault();
 
-    // newP.appendChild(trash);
     newP.appendChild(edit);
 }
-
-// new cutomer orders
-// function newbtn(){
-//     divcontainer.style.setProperty("visibility", "visible");
-// }
 
 function editbtn(): void {
     divcontainer.classList.remove("hidden");

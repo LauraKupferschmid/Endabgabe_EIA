@@ -53,6 +53,8 @@ export class waiter extends human {
 >>>>>>> parent of 157ea32 (ewer)
 
     draw(): void {
+
+
         //face
         this.ctx.fillStyle = "yellow";
         this.ctx.beginPath();

@@ -1,7 +1,7 @@
 "use strict";
 var iceshop;
 (function (iceshop) {
-    class icecream {
+    class Icecream {
         position;
         icecream;
         sort_souce;
@@ -64,6 +64,6 @@ var iceshop;
             }
         }
     }
-    iceshop.icecream = icecream;
+    iceshop.Icecream = Icecream;
 })(iceshop || (iceshop = {}));
 //# sourceMappingURL=icecream.js.map

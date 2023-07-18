@@ -1,7 +1,7 @@
 "use strict";
 var iceshop;
 (function (iceshop) {
-    class toppings extends iceshop.icecream {
+    class toppings extends icecream {
         drawSouce() {
             if (this.sort_souce = "Chocolate") {
                 // souce

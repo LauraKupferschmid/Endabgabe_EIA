@@ -72,14 +72,9 @@ var iceshop;
         document.querySelector("#div1").appendChild(newP);
         newP.innerHTML = "Anzahl Kugeln: " + iceshop.taskArray[0] + ", <br> Sorte: " + iceshop.taskArray[1] + ", <br>Souce: " + iceshop.taskArray[2] + ", <br>Streusel: " + iceshop.taskArray[3] + "  <br>Sahne: " + iceshop.taskArray[4];
         e.preventDefault();
-        // newP.appendChild(trash);
         newP.appendChild(edit);
     }
     iceshop.addbtn = addbtn;
-    // new cutomer orders
-    // function newbtn(){
-    //     divcontainer.style.setProperty("visibility", "visible");
-    // }
     function editbtn() {
         divcontainer.classList.remove("hidden");
         document.getElementById("div1").removeChild(newdiv);

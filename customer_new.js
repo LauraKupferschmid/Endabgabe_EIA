@@ -1,7 +1,7 @@
 "use strict";
 var iceshop;
 (function (iceshop) {
-    class customer extends iceshop.Human {
+    class Customer extends iceshop.Human {
         draw() {
             //face
             this.ctx.fillStyle = "yellow";
@@ -50,6 +50,6 @@ var iceshop;
             requestAnimationFrame(() => this.gameLoop());
         }
     }
-    iceshop.customer = customer;
+    iceshop.Customer = Customer;
 })(iceshop || (iceshop = {}));
-//# sourceMappingURL=customer_new.js.map
+//# sourceMappingURL=Customer_new.js.map
